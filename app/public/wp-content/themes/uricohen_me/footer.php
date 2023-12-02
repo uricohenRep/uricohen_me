@@ -12,7 +12,6 @@
 ?>
 
 	<footer id="colophon" class="site-footer">
-		<h1>uri</h1>
 		<div class="site-info">
 			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'uricohen_me' ) ); ?>">
 				<?php
