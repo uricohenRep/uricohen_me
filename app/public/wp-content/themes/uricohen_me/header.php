@@ -20,9 +20,9 @@
 	<?php wp_head(); ?>
 </head>
 
-<body <?php body_class(); ?>>
+<body  class="" <?php body_class(); ?>>
 <?php wp_body_open(); ?>
-<div id="page" class="site">
+<div id="page" class=" container mx-auto site">
 	<a class="skip-link screen-reader-text" href="#primary"><?php esc_html_e( 'Skip to content', 'uricohen_me' ); ?></a>
 
 	<header id="masthead" class="site-header">
@@ -45,15 +45,18 @@
 			<?php endif; ?>
 		</div><!-- .site-branding -->
 
-		<nav id="site-navigation" class="main-navigation">
+		<nav id="site-navigation" class="main-navigation flex justify-center">
 			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'uricohen_me' ); ?></button>
 			<?php
-			wp_nav_menu(
-				array(
-					'theme_location' => 'menu-1',
-					'menu_id'        => 'primary-menu',
-				)
-			);
+				wp_nav_menu(
+					array(
+						'theme_location' => 'menu-1', // specify the menu location
+						'menu_id'        => 'primary-menu', // id for the <ul>
+						'menu_class'     => 'flex ', // your custom class for the <ul>
+						'add_li_class'   => 'uri' // custom class for <li> if needed
+					)
+				);
+
 			?>
 		</nav><!-- #site-navigation -->
 	</header><!-- #masthead -->

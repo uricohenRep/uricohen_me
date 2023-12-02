@@ -177,6 +177,15 @@ if ( defined( 'JETPACK__VERSION' ) ) {
 }
 
 function mytheme_enqueue_tailwind() {
-    wp_enqueue_style( 'tailwind-css', get_stylesheet_directory_uri() . '/tailwindcss/tailwind.css' );
+    wp_enqueue_style( 'tailwind-css', get_template_directory_uri() . '/style.css', array(), '1.0' );
 }
 add_action( 'wp_enqueue_scripts', 'mytheme_enqueue_tailwind' );
+
+function add_additional_class_on_li($classes, $item, $args) {
+    if (isset($args->add_li_class)) {
+        $classes[] = $args->add_li_class;
+    }
+    return $classes;
+}
+add_filter('nav_menu_css_class', 'add_additional_class_on_li', 1, 3);
+
