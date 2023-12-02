@@ -6,3 +6,12 @@ AH00558: httpd.exe: Could not reliably determine the server's fully qualified do
 AH00558: httpd.exe: Could not reliably determine the server's fully qualified domain name, using 26.32.60.178. Set the 'ServerName' directive globally to suppress this message
 AH00558: httpd.exe: Could not reliably determine the server's fully qualified domain name, using 26.32.60.178. Set the 'ServerName' directive globally to suppress this message
 [Sat Dec 02 16:01:29.724235 2023] [mpm_winnt:notice] [pid 8836:tid 856] AH00354: Child: Starting 64 worker threads.
+AH00558: httpd.exe: Could not reliably determine the server's fully qualified domain name, using 26.32.60.178. Set the 'ServerName' directive globally to suppress this message
+[Sat Dec 02 19:03:38.200416 2023] [core:warn] [pid 2268:tid 552] AH00098: pid file C:/Users/Uri/AppData/Roaming/Local/run/2F_-OCogi/apache/logs/httpd.pid overwritten -- Unclean shutdown of previous Apache run?
+[Sat Dec 02 19:03:38.204417 2023] [mpm_winnt:notice] [pid 2268:tid 552] AH00455: Apache/2.4.43 (Win32) mod_fcgid/2.3.9a configured -- resuming normal operations
+[Sat Dec 02 19:03:38.204417 2023] [mpm_winnt:notice] [pid 2268:tid 552] AH00456: Server built: Apr 21 2020 13:46:54
+[Sat Dec 02 19:03:38.204417 2023] [core:notice] [pid 2268:tid 552] AH00094: Command line: 'C:\\Users\\Uri\\AppData\\Roaming\\Local\\lightning-services\\apache-2.4.43+7\\bin\\win32\\bin\\httpd.exe -d C:/Users/Uri/AppData/Roaming/Local/lightning-services/apache-2.4.43+7/bin/win32 -D FOREGROUND -f C:\\Users\\Uri\\AppData\\Roaming\\Local\\run\\2F_-OCogi\\conf\\apache\\apache2.conf'
+[Sat Dec 02 19:03:38.437294 2023] [mpm_winnt:notice] [pid 2268:tid 552] AH00418: Parent: Created child process 14760
+AH00558: httpd.exe: Could not reliably determine the server's fully qualified domain name, using 26.32.60.178. Set the 'ServerName' directive globally to suppress this message
+AH00558: httpd.exe: Could not reliably determine the server's fully qualified domain name, using 26.32.60.178. Set the 'ServerName' directive globally to suppress this message
+[Sat Dec 02 19:03:50.737707 2023] [mpm_winnt:notice] [pid 14760:tid 628] AH00354: Child: Starting 64 worker threads.

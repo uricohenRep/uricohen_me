@@ -176,3 +176,7 @@ if ( defined( 'JETPACK__VERSION' ) ) {
 	require get_template_directory() . '/inc/jetpack.php';
 }
 
+function mytheme_enqueue_tailwind() {
+    wp_enqueue_style( 'tailwind-css', get_stylesheet_directory_uri() . '/tailwindcss/tailwind.css' );
+}
+add_action( 'wp_enqueue_scripts', 'mytheme_enqueue_tailwind' );
